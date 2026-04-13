@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="tabs">
+        <div class="tab Active">To Do</div>
+        <div class="tab">In Progress</div>
+        <div class="tab">Done</div>
+    </div>
+
+    <div class="box" id="boxing">
+    <div class="Critical critical-1">
+        <span>critical</span>
+        <div id="critical"></div>
+        <button class="addButton">+</button>
+    </div>
+       <div class="columns">
+        <div class="column" id="critical-list"></div>
+        <div class="column" id="InProgress"></div>
+        <div class="column" id="Done"></div>
+       </div>
+    </div>  
+
+    <div class="box">
+    <div class="Critical critical-2">
+        <span>Issue Tickets</span>
+        <div id="issues-list"></div>
+        <button class="addButton">+</button>
+    </div>
+       <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>   
+    </div>
+
+    <div class="box">
+    <div class="Critical critical-3">
+        <span>Maintenance</span>
+        <div id="maintenance-list"></div>
+        <button class="addButton">+</button>
+    </div>
+       <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>   
+    </div>
+
+    <div class="box">
+    <div class="Critical critical-4">
+        <span>Unplanned</span>
+        <div id="Unplanned-list"></div>
+        <button class="addButton">+</button>
+    </div>
+       <div class="columns">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>   
+    </div>
+
+ <div class="modal" id="taskPanel">
+    <div class="Addtask" >
+        <h1>Add Task</h1>
+        
+        <select class="priority_Select" >
+            <option value="critical-list">Critical</option>
+            <option value="issues-list">Issues</option>
+            <option value="maintenance-list">Maintenance</option>
+            <option value="Unplanned-list">Unplanned</option>
+        </select>
+        <label>Title</label>
+        <input type="text" placeholder="title" id="title" >
+
+        <label>Description</label>
+        <textarea id="desc"></textarea>
+
+        <label>Card color</label>
+        <input type="color" id="colorPicker" >
+
+        <div class="buttons">
+          <button id="closeModal">Cancel</button>
+          <button id="addTask">Add Task</button>
+        </div>
+    </div>
+ </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
